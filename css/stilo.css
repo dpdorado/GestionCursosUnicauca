@@ -71,12 +71,17 @@ h1{
      height: auto;
      margin-bottom: 100%;
      
+     
  }
 }
 @media (min-width:1024px){
     .cotenedor{
         width: 1000px;
         
+    }
+    .cursos section{
+        width: 1000px;
+        margin: auto;
     }
 }
 @media (min-width:468px){
@@ -89,9 +94,9 @@ h1{
       
         height: auto;
         margin-top: -10px;
-    
        
     }
+    
 }
 @media (min-width: 780px){
    #banner img{

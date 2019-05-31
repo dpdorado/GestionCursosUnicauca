@@ -1,0 +1,25 @@
+
+.semestre{
+    background: rgba(221, 205, 204,0.8);
+    margin:10px;
+    height: auto;
+    padding: 10px;
+    color: ;
+    box-shadow: 2px 2px 5px 0px;
+    cursor: pointer;
+}
+.contenedor{
+ width: 100%;
+ height: 100%; 
+ 
+}
+@media (min-width:1024px){
+    .contenedor{
+        width: 1000px;
+        height: auto;
+        margin: auto;
+    } 
+}
+semestre:hover{
+    color: red;
+}
