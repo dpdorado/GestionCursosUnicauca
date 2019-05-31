@@ -1,0 +1,151 @@
+
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+header{
+    width: 100%;
+    height: 50px;
+    background: hsla(0, 98%, 34%, 0.966);
+    color: rgb(230, 232, 243);
+    position: fixed;
+    top: 0;
+    left:0;
+    z-index:100;
+    
+}
+body{
+    background: rgb(220, 221, 228);
+}
+h1{
+    float: left;
+}
+.cotenedor{
+    width: 98%;
+    margin: auto;
+}
+ .informacion{
+    margin:auto;
+}
+#menu-bar{
+
+    display: none;
+}
+.menu{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background:  hsla(0, 98%, 34%, 0.7);;
+    top: 50px;
+    left: 0;
+    transition: all 0.5s;
+    transform: translate(-100%);
+}
+.menu a{
+    display:block;
+    color:rgb(224, 226, 233);
+    height: 50px;
+    text-decoration-color: none;
+    padding:  15px;
+    border-bottom: 1px solid rgba(255,255,255,0.8);
+}
+@media (min-width:1024px){
+    .menu{
+        position: static;
+        width:auto;
+        height: auto;
+        transform: translateX(0%);
+        float: right;
+        display: flex;
+        border-bottom: none;
+
+    }
+    
+    header label{
+        display: none;
+    }
+}
+@media (max-width:1500px){
+ #banner img{
+     height: auto;
+     margin-bottom: 100%;
+     
+ }
+}
+@media (min-width:1024px){
+    .cotenedor{
+        width: 1000px;
+        
+    }
+}
+@media (min-width:468px){
+    #banner{
+       height: 200px;
+       overflow: hidden;
+       
+    }
+    #banner img {
+      
+        height: auto;
+        margin-top: -10px;
+    
+       
+    }
+}
+@media (min-width: 780px){
+   #banner img{
+       height: auto;
+       margin-top: -40px;
+   }
+}
+.menu a:hover{
+    background: rgb(255, 255, 255, 0.3);
+}
+section{
+    widows: 100;
+    margin-bottom: 25px;
+}
+header label{
+    float: right;
+    font-size: 30px;
+    margin: 6px;
+    cursor: pointer;
+}
+head .cotenedor
+{
+    display: table 
+}
+#menu-bar:checked ~ .menu{
+    transform: translate(0);
+}
+#banner{
+    margin-top: 50px;
+    position: relative;
+    
+}
+
+#banner img{
+    width: 100%;
+    height: auto;
+}
+main{
+    width: 100%;
+    height: 100%;
+}
+section{
+    padding: 10px;
+    margin-top: 6px;
+    border: 1px solid blue;
+}
+#semestre{
+    background: rgba(7, 23, 148, 0.993);
+    color:white;
+    margin-top: 5px;
+    padding: 1px;
+    
+}
+#prueba{
+    color:black;
+    
+}
