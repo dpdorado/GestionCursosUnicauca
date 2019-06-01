@@ -5,6 +5,7 @@
         public $creditos='1';
         public $estado=false;
         public $semestre='1';
+        
 
         //Contructor de la clase
         function __construct($nombre,$codigo,$creditos,$semestre,$estado) {
