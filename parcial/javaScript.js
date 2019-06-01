@@ -11,8 +11,6 @@ function buscar_codigo(){
         /*Mostras la respuesta DOM*/ 
         informacion_es=document.getElementById("informacion");
         informacion_es.innerHTML=respuesta;
-        var snd = new Audio("alarm.wav");
-        snd.play();
     }).fail(function(jqXHR) {
         alert(jqXHR.statusText);
     });
@@ -30,6 +28,8 @@ function cambiar_estado_materia(comp){
     /*Mostras la respuesta DOM*/ 
         informacion_es=document.getElementById(("_").concat(id));
         informacion_es.innerHTML=respuesta;
+        var snd = new Audio("./sonidos/reloj.mp3");
+        snd.play();
     }).fail(function(jqXHR) {
         alert(jqXHR.statusText);
     });
