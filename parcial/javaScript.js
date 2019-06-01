@@ -11,6 +11,25 @@ function buscar_codigo(){
         /*Mostras la respuesta DOM*/ 
         informacion_es=document.getElementById("informacion");
         informacion_es.innerHTML=respuesta;
+        var snd = new Audio("alarm.wav");
+        snd.play();
+    }).fail(function(jqXHR) {
+        alert(jqXHR.statusText);
+    });
+}
+
+function cambiar_estado_materia(comp){
+    let id = comp.id;
+    console.log(id);
+    $.ajax({
+        url:'server.php',
+        method:'POST',
+        data:{'id_codigo':id}
+    
+    }).done(function(respuesta) {
+    /*Mostras la respuesta DOM*/ 
+        informacion_es=document.getElementById(("_").concat(id));
+        informacion_es.innerHTML=respuesta;
     }).fail(function(jqXHR) {
         alert(jqXHR.statusText);
     });
