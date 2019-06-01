@@ -13,25 +13,22 @@ include("Estudiante.php");
             if (!file_exists($archivo_codigo)){
                 //crear el archivo json
                 $estudiante = self::crear_estudiante_defecto();
-                $materias='{';
-                $Objsmaterias=$estudiante->get_materias();
-                foreach($Objsmaterias as $valor){
-                    $materias=$materias.json_encode((array)$valor);
-                }
-                $materias=$materias.'}';
+                $materias=self::convertir_estudiante_json($estudiante);
                 file_put_contents($archivo_codigo,$materias);
             }
-            //return '<div><h1>'.htmlspecialchars($archivo_codigo).'</h1</div>';
-
-            
-
-            //Leemos el JSON
-            //$datos_estudiante=file_get_constents($archivo_codigo);
-            //$json_estudiante=json_decode($datos_estudiante,true);
-
-            //return self::obtener_code_html($json_estudiante);
+            $datos_estudiante=file_get_constents($archivo_codigo);
+            $json_estudiante=json_decode($datos_estudiante,true);
+            return self::obtener_code_html($json_estudiante);
         }
-       
+        function convertir_estudiante_json($estudiante){
+            $materias=json_encode($estudiante);
+            return $materias;
+        }
+        /*function convertir_json_estudiante($archivo_codigo){
+            $datos_estudiante=file_get_constents($archivo_codigo);
+            $json_estudiante=json_decode($datos_estudiante,true);
+            return $json_estudiante;
+        }*/
         function crear_estudiante_defecto(){
              //Agregando materias
              //Semestre #1
@@ -68,18 +65,16 @@ include("Estudiante.php");
              $materias_=[$materia_1,$materia_2,$materia_3,$materia_4,$materia_5,$materia_6,$materia_7,$materia_8,$materia_9,$materia_10,$materia_11,$materia_12,$materia_13,$materia_14,$materia_15,$materia_16,$materia_17,$materia_18,$materia_19,$materia_20,$materia_21,$materia_22,$materia_23,$materia_24];
              
              $estudiante=new Estudiante();
-             $estudiante->set_materias($materias_);
+             $estudiante->materias=$materias_;
              return $estudiante;
         }
         function obtener_code_html($estudiante){
             $html='';
             $html='<div id="informacion" class="container">
-               <h1>'.htmlspecialchars($estudiante.get_codigo()).'</h1>
+               <h1>'.htmlspecialchars($estudiante->get_materias()[0]->get_nombre()).'</h1>
             </div>';
             return $html;
         }
-        /*function convertir_estudiante_array($estudiante){
-            
-        }*/
+       
     }
 ?>

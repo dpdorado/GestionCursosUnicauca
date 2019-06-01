@@ -1,10 +1,10 @@
 <?php
     class Materia{
-        private $nombre='';
-        private $codigo='';
-        private $creditos='1';
-        private $estado=false;
-        private $semestre='1';
+        public $nombre='';
+        public $codigo='';
+        public $creditos='1';
+        public $estado=false;
+        public $semestre='1';
 
         //Contructor de la clase
         function __construct($nombre,$codigo,$creditos,$semestre,$estado) {
@@ -16,7 +16,7 @@
         }
 
         //Setters y Getters
-        public function get_nombre(){
+        /*public function get_nombre(){
             return $this->nombre;
         }
         public  function set_nombre($nombre){
@@ -42,7 +42,7 @@
         }
         public function set_estado($estado){
             $this->estado = $estado;
-        }
+        }*/
 
     }
 ?>
