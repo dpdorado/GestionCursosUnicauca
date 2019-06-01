@@ -16,7 +16,7 @@ include("Estudiante.php");
                 $materias=self::convertir_estudiante_json($estudiante);
                 file_put_contents($archivo_codigo,$materias);
             }
-            $datos_estudiante=file_get_constents($archivo_codigo);
+            $datos_estudiante=file_get_contents($archivo_codigo);
             $json_estudiante=json_decode($datos_estudiante,true);
             return self::obtener_code_html($json_estudiante);
         }
@@ -69,11 +69,53 @@ include("Estudiante.php");
              return $estudiante;
         }
         function obtener_code_html($estudiante){
-            $html='';
-            $html='<div id="informacion" class="container">
-               <h1>'.htmlspecialchars($estudiante->get_materias()[0]->get_nombre()).'</h1>
-            </div>';
-            return $html;
+            $estudiante1=$estudiante['materias'];
+            $div_contenedor='<div class="container">';
+            
+            for ($i = 1; $i <= 10; $i++) {
+                $semestre=self::armar_semestre((string)$i, $estudiante1);
+                $div_contenedor=$div_contenedor.$semestre;
+            }
+            $div_contenedor=$div_contenedor."</div>";
+
+            return $div_contenedor;
+        }
+
+        function armar_semestre($num_semestre, $estudiante1){
+            $count=0;
+            $div_p='<br><div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">Semestre '.htmlspecialchars($num_semestre).'</h5>
+                            <div  class="card-tex t">
+                                <table class="table table table-border table-hover">
+                                    <tr>
+                                        <th>Nombre</th>
+                                        <th>Codigo</th> 
+                                        <th>Creditos</th>
+                                        <th>Estado</th>
+                                    </tr>';
+
+            foreach($estudiante1 as $valor){
+                if (strcmp($num_semestre, $valor['semestre'])==0){
+                    $estilo= $valor['estado']?'<strike>Terminada</strike>':'Sin Terminar';
+                    $div_p=$div_p.'<tr>
+                                    <td>'.$valor['nombre'].'</td>
+                                    <td>'.$valor['codigo'].'</td>
+                                    <td>'.$valor['creditos'].'</td>
+                                    <td class="text-secondary">'.$estilo.'</td>
+                                    </tr>';
+                    $count=1;
+                }
+            }
+            $div_p=$div_p.' </table>
+                        </div>
+                    </div>
+                </div><br>';
+            if ($count==1){
+                return $div_p;
+            }else{
+                return '';
+            }
         }
        
     }
