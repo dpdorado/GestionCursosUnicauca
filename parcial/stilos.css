@@ -8,3 +8,6 @@ body{
 header h1{
     position: absolute;
 }
+button{
+    background: red;
+}
