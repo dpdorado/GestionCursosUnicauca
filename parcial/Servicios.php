@@ -142,12 +142,13 @@ include("Estudiante.php");
                 //acomodar id, darle un mejor nombre al button
                 if (strcmp($num_semestre, $valor['semestre'])==0){
                     $estilo= $valor['estado']?'<strike>Terminada</strike>':'Sin Terminar';
+                    $estilobutton= $valor['estado']?'class="btn btn-danger':'class="btn btn-primary';
                     $div_p=$div_p.'<tr id= "_'.$codigo.'_'.$valor['codigo'].'">
                                     <td>'.$valor['nombre'].'</td>
                                     <td>'.$valor['codigo'].'</td>
                                     <td>'.$valor['creditos'].'</td>
                                     <td class="text-secondary">'.$estilo.'</td>
-                                    <td><button id="'.$codigo.'_'.$valor['codigo'].'"onclick="cambiar_estado_materia(this)" type="button" class="btn btn-primary btn-lg active">Cambiar estado</button></td>
+                                    <td><button id="'.$codigo.'_'.$valor['codigo'].'"onclick="cambiar_estado_materia(this)" type="button" ' .$estilobutton. ' btn-lg active">Cambiar estado</button></td>
                                     </tr>';
                     $count=1;
                 }
@@ -180,12 +181,13 @@ include("Estudiante.php");
                     if (strcmp($ids[1], $valor['codigo'])==0){
                         $html='';
                         $estilo= $valor['estado']?'<strike>Terminada</strike>':'Sin Terminar';
+                        $estilobutton= $valor['estado']?'class="btn btn-danger':'class="btn btn-primary';
                         $html=$html.'<tr id= "_'.$ids[0].'_'.$valor['codigo'].'">
                                         <td>'.$valor['nombre'].'</td>
                                         <td>'.$valor['codigo'].'</td>
                                         <td>'.$valor['creditos'].'</td>
                                         <td class="text-secondary">'.$estilo.'</td>
-                                        <td><button id="'.$ids[0].'_'.$valor['codigo'].'"onclick="cambiar_estado_materia(this)" type="button" class="btn btn-primary btn-lg active">Cambiar estado</button></td>
+                                        <td><button id="'.$ids[0].'_'.$valor['codigo'].'"onclick="cambiar_estado_materia(this)" type="button"  ' .$estilobutton. ' btn-lg active">Cambiar estado</button></td>
                                         </tr>';
                         return $html;
                     }
