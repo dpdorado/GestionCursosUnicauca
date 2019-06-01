@@ -6,7 +6,6 @@
         //Contructor de la clase
         function __construct($_semestre){
             $this->_semestre = $_semestre;
-            $this->_materias==new ArrayObject();
         }
 
         public function set_semestre($_semestre){
@@ -21,9 +20,8 @@
             return $this->_materias;
         }
 
-        public function set_materias($_materias){
-            foreach ($_materias as $valor)
-                $this->_materias->append($valor);     
+        public function set_materias($materias){
+            $this->_materias=$materias;
             //self::agregar_materia($valor);
         }
 

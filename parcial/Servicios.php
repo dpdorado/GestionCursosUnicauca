@@ -5,7 +5,7 @@ include("Semestre.php");
     class Servicios{
 
         function crear_json($codigo){
-            $archivo_codigo = '/Estudiantes/'.$codigo.'.json'; 
+            $archivo_codigo = './Estudiantes/'.$codigo.'.json'; 
             
             if (file_exists('/Estudiantes')){
                 return '<div><h1>Contacte con el administrador.</h1</div>';
@@ -69,18 +69,18 @@ include("Semestre.php");
              $materias_4=[$materia_19,$materia_20,$materia_21,$materia_22,$materia_23,$materia_24];
              
              $semestre_1=new Semestre(1);
-             $semestre_1::set_materias($materias_1);
+             $semestre_1->set_materias(new ArrayObject($materias_1));
              $semestre_2=new Semestre(2);
-             $semestre_2::set_materias($materias_2);
+             $semestre_2->set_materias(new ArrayObject($materias_2));
              $semestre_3=new Semestre(3);
-             $semestre_3::set_materias($materias_3);
+             $semestre_3->set_materias(new ArrayObject($materias_3));
              $semestre_4=new Semestre(4);
-             $semestre_4::set_materias($materias_4);
+             $semestre_4->set_materias(new ArrayObject($materias_4));
              
              $semestres=[$semestre_1,$semestre_2,$semestre_3,$semestre_4];
     
-             $estudiante=new Estudiante($codigos);
-             $estudiante::set_semestres($semestres);
+             $estudiante=new Estudiante($codigo);
+             $estudiante->set_semestres(new ArrayObject($semestres));
              return $estudiante;
         }
         function obtener_code_html($estudiante){
