@@ -1,27 +1,27 @@
 <?php
 
     class Estudiante{
+<<<<<<< HEAD
         private $codigo="";
         private $semestres = null;
         
         //Contructor de la clase
         function __construct(int $codigo) {
             $this->codigo = $codigo;
+=======
+        public $materias=[];
+        
+        //Contructor de la clase
+        function __construct() {
+>>>>>>> 3735d1d1801264af52f5c19e2f45847bf132ab17
         }
 
-        //Setters y Getters
-        public function get_codigo(){
-            return $this->codigo;
+        /*public function get_materias(){
+            return $this->materias;
         }
-        public function set_codigo($codigo){
-            $this->codigo = $codigo;
-        }
-        public function get_semestres(){
-            return $this->semestres;
-        }
-        public function set_semestres($_semestres){
-                $this->semestres=$_semestres;
-        }
+        public function set_materias($materias){
+                $this->materias=$materias;
+        }*/
         /*public function agregar_semestre($semestre){
             array_push($this->semestres,$semestre);
         }*/
