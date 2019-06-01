@@ -22,8 +22,9 @@
         }
 
         public function set_materias($_materias){
-            foreach ($_materias as $valor)
-                $this->_materias->append($valor);     
+            //echo($_materias);
+            //foreach ($_materias as $valor)
+               // $this->_materias->append($valor);     
             //self::agregar_materia($valor);
         }
 

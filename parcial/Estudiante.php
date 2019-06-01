@@ -2,10 +2,10 @@
 
     class Estudiante{
         private $codigo="";
-        private $semestres;
+        private $semestres = null;
         
         //Contructor de la clase
-        function __construct($codigo) {
+        function __construct(int $codigo) {
             $this->codigo = $codigo;
             $this->semestres=new ArrayObject();
         }
@@ -21,8 +21,8 @@
             return $this->semestres;
         }
         public function set_semestres($semestres){
-            foreach ($semestres as $valor)
-                $this->semestres->append($valor);
+           foreach ($semestres as $valor)
+              $this->semestres->append($valor);
         }
         /*public function agregar_semestre($semestre){
             array_push($this->semestres,$semestre);

@@ -79,7 +79,7 @@ include("Semestre.php");
              
              $semestres=[$semestre_1,$semestre_2,$semestre_3,$semestre_4];
     
-             $estudiante=new Estudiante($codigos);
+             $estudiante=new Estudiante($codigo);
              $estudiante::set_semestres($semestres);
              return $estudiante;
         }
