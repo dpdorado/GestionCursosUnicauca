@@ -1,12 +1,18 @@
 
 .semestre{
     background: rgba(221, 205, 204,0.8);
-    margin:10px;
+    margin-top:3%;
+    margin-left: 10%;
+    margin-right: 10%;
     height: auto;
-    padding: 10px;
+    padding: 7px;
     color: ;
     box-shadow: 2px 2px 5px 0px;
     cursor: pointer;
+    transform:scale(1,1);
+    opacity: 0.5;
+    transition: opacity 1s, transform 1s;
+    
 }
 .contenedor{
  width: 100%;
@@ -20,6 +26,8 @@
         margin: auto;
     } 
 }
-semestre:hover{
-    color: red;
+.semestre:hover{
+    background: hsla(0, 98%, 34%, 0.9);
+    transform:scale(1.1,1);
+    opacity: 1;
 }
