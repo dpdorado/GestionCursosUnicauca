@@ -62,45 +62,45 @@ include("Estudiante.php");
              $materia_23=new Materia('lba de Electromagnetismo', '1023','1','4',false);
              $materia_24=new Materia('Algebra Lineal', '1024','3','4',false);
               //semestre 5
-              $materia_25=new Materia('Analisis numerica', '1013','4','5',false);
-              $materia_26=new Materia('Teoría de la Computación', '1014','1','5',false);
-              $materia_27=new Materia('Arquitectura Computacional ', '1015','4','5',false);
-              $materia_28=new Materia('Bases de Datos II', '1016','1','5',false);
-              $materia_29=new Materia('Laboratorio de Bases de Datos II', '1017','1','5',false);
+              $materia_25=new Materia('Analisis numerica', '1025','4','5',false);
+              $materia_26=new Materia('Teoría de la Computación', '1026','1','5',false);
+              $materia_27=new Materia('Arquitectura Computacional ', '1027','4','5',false);
+              $materia_28=new Materia('Bases de Datos II', '1016','1','28',false);
+              $materia_29=new Materia('Laboratorio de Bases de Datos II', '1029','1','5',false);
              //semestre 6
-              $materia_30=new Materia('Estadística y Probabilidad ', '1018','4','6',false);
-              $materia_31=new Materia('Estructuras de Lenguajes', '1019','3','6',false);
-              $materia_32=new Materia('Laboratorio de Estructuras de Lenguajes', '1020','1','6',false);
-              $materia_33=new Materia('Ingeniería de Software II', '1021','4','6',false);
-              $materia_34=new Materia('Laboratorio de Ingeniería de Software II', '1022','3','6',false);
-              $materia_35=new Materia('Sistemas Operativos ', '1023','3','6',false);
-              $materia_36=new Materia('Laboratorio de Sistemas Operativos ', '1024','1','6',false);
+              $materia_30=new Materia('Estadística y Probabilidad ', '1030','4','6',false);
+              $materia_31=new Materia('Estructuras de Lenguajes', '1031','3','6',false);
+              $materia_32=new Materia('Laboratorio de Estructuras de Lenguajes', '1032','1','6',false);
+              $materia_33=new Materia('Ingeniería de Software II', '1033','4','6',false);
+              $materia_34=new Materia('Laboratorio de Ingeniería de Software II', '1034','3','6',false);
+              $materia_35=new Materia('Sistemas Operativos ', '1035','3','6',false);
+              $materia_36=new Materia('Laboratorio de Sistemas Operativos ', '1036','1','6',false);
              //semestre 7
-             $materia_37=new Materia('Metodología de la Investigación ', '1025','3','7',false);
-             $materia_38=new Materia('Inteligencias Artificial', '1026','3','7',false);
-             $materia_39=new Materia('Teoría Dinámica de Sistemas', '1027','3','7',false);
-             $materia_40=new Materia('Sistemas Distribuidos', '1028','3','7',false);
-             $materia_41=new Materia('Laboratorio de Sistemas Distribuidos', '1029','1','7',false);
-             $materia_42=new Materia('Ingeniería de Software III ', '1030','3','7',false);
-             $materia_43=new Materia(' Laboratorio de Ingeniería de Software III ', '1031','3','7',false);
+             $materia_37=new Materia('Metodología de la Investigación ', '1037','3','7',false);
+             $materia_38=new Materia('Inteligencias Artificial', '1038','3','7',false);
+             $materia_39=new Materia('Teoría Dinámica de Sistemas', '1039','3','7',false);
+             $materia_40=new Materia('Sistemas Distribuidos', '1040','3','7',false);
+             $materia_41=new Materia('Laboratorio de Sistemas Distribuidos', '1041','1','7',false);
+             $materia_42=new Materia('Ingeniería de Software III ', '1042','3','7',false);
+             $materia_43=new Materia(' Laboratorio de Ingeniería de Software III ', '1043','3','7',false);
              //semestre 8
-             $materia_44=new Materia('Redes','1032','4','8',false);
-             $materia_45=new Materia('Investigación de Operaciones', '1033','4','8',false);
-             $materia_46=new Materia('Proyecto I', '1034','3','8',false);
-             $materia_47=new Materia('Calidad de Software', '1035','3','8',false);
-             $materia_48=new Materia(' Electiva I ', '1036','3','8',false);
-             $materia_49=new Materia('Electiva II', '1037','3','8',false);
+             $materia_44=new Materia('Redes','1044','4','8',false);
+             $materia_45=new Materia('Investigación de Operaciones', '1045','4','8',false);
+             $materia_46=new Materia('Proyecto I', '1046','3','8',false);
+             $materia_47=new Materia('Calidad de Software', '1047','3','8',false);
+             $materia_48=new Materia(' Electiva I ', '1048','3','8',false);
+             $materia_49=new Materia('Electiva II', '1049','3','8',false);
              //semestre 9
-             $materia_50=new Materia('Gestión empresarial','1038','3','9',false);
-             $materia_51=new Materia('Gestión de Proyectos Informáticos', '1039','3','9',false);
-             $materia_52=new Materia('Proyecto II', '1040','3','9',false);
-             $materia_53=new Materia('Fundamentos de Economía ', '1041','3','9',false);
-             $materia_54=new Materia('Electiva III', '1042','3','9',false);
-             $materia_55=new Materia(' Electiva IV ','1043','3','9',false);
+             $materia_50=new Materia('Gestión empresarial','1050','3','9',false);
+             $materia_51=new Materia('Gestión de Proyectos Informáticos', '1051','3','9',false);
+             $materia_52=new Materia('Proyecto II', '1052','3','9',false);
+             $materia_53=new Materia('Fundamentos de Economía ', '1053','3','9',false);
+             $materia_54=new Materia('Electiva III', '1054','3','9',false);
+             $materia_55=new Materia(' Electiva IV ','1055','3','9',false);
              //semestre 10
-             $materia_56=new Materia('Legislación Laboral','1044','1','10',false);
-             $materia_57=new Materia('Trabajo de Grado ', '1045','14','10',false);
-             $materia_58=new Materia('Electiva V', '1046','3','10',false);
+             $materia_56=new Materia('Legislación Laboral','1056','1','10',false);
+             $materia_57=new Materia('Trabajo de Grado ', '1057','14','10',false);
+             $materia_58=new Materia('Electiva V', '1058','3','10',false);
            
  
               
