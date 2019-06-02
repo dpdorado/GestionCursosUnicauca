@@ -126,11 +126,11 @@ include("Estudiante.php");
         }
         function armar_semestre($num_semestre, $estudiante1,$codigo){
             $count=0;
-            $div_p='<br><div class="card">
+            $div_p='<br><div class="card responsive" >
                         <div class="card-body">
                             <h5 class="card-title text-center">Semestre '.htmlspecialchars($num_semestre).'</h5>
-                            <div  class="card-tex t">
-                                <table class="table table table-border table-hover">
+                            <div  class="card-text">
+                                <table class="table table-border table-hover table-responsive">
                                     <tr class="thead-dark">
                                         <th>Nombre</th>
                                         <th>Codigo</th> 
