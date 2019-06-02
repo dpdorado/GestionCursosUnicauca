@@ -129,8 +129,8 @@ include("Estudiante.php");
             $div_p='<br><div class="card responsive" >
                         <div class="card-body">
                             <h5 class="card-title text-center">Semestre '.htmlspecialchars($num_semestre).'</h5>
-                            <div  class="card-text">
-                                <table class="table table-border table-hover table-responsive">
+                            <div  class="card-text table-responsive" >
+                                <table class="table table-border table-hover">
                                     <tr class="thead-dark">
                                         <th>Nombre</th>
                                         <th>Codigo</th> 
