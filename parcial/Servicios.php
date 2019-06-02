@@ -42,25 +42,25 @@ include("Estudiante.php");
              $materia_7=new Materia('Porgramación Orientada a Objetos', '1007','4','2',false);
              $materia_8=new Materia('lba de Programación Orientada a Objetos', '1008','1','2',false);
              $materia_9=new Materia('Cálculo II', '1009','4','2',false);
-             $materia_10=new Materia('Electromagnetismo', '1010','2','4',false);
-             $materia_11=new Materia('lba de Electromagnetismo', '1011','1','2',false);
+             $materia_10=new Materia('Mecánica', '1010','2','4',false);
+             $materia_11=new Materia('lba de Mecánica', '1011','1','2',false);
              $materia_12=new Materia('Algebra Lineal', '1012','3','2',false);
              
             //Semestre 3
-             $materia_13=new Materia('Porgramación Orientada a Objetos', '1013','4','3',false);
-             $materia_14=new Materia('lba de Programación Orientada a Objetos', '1014','1','3',false);
-             $materia_15=new Materia('Cálculo II', '1015','4','3',false);
+             $materia_13=new Materia('Estructuras de Datos I', '1013','4','3',false);
+             $materia_14=new Materia('lba Estructuras de Datos I', '1014','1','3',false);
+             $materia_15=new Materia('Cálculo III', '1015','4','3',false);
              $materia_16=new Materia('Electromagnetismo', '1016','4','3',false);
              $materia_17=new Materia('lba de Electromagnetism', '1017','1','3',false);
-             $materia_18=new Materia('Algebra Lineal', '1018','3','3',false);
+             $materia_18=new Materia('Ingles I', '1018','3','3',false);
              
             //Semestre 4
-             $materia_19=new Materia('Porgramación Orientada a Objetos', '1019','4','4',false);
-             $materia_20=new Materia('lba de Programación Orientada a Objetos', '1020','1','4',false);
-             $materia_21=new Materia('Cálculo II', '1021','4','4',false);
-             $materia_22=new Materia('Electromagnetismo', '1022','4','4',false);
-             $materia_23=new Materia('lba de Electromagnetismo', '1023','1','4',false);
-             $materia_24=new Materia('Algebra Lineal', '1024','3','4',false);
+             $materia_19=new Materia('Estructura de Datos II', '1019','4','4',false);
+             $materia_20=new Materia('Lba Estructura de Datos II', '1020','1','4',false);
+             $materia_21=new Materia('Ecuaciones Diferenciales', '1021','4','4',false);
+             $materia_22=new Materia('Vibraciones y Ondas', '1022','4','4',false);
+             $materia_23=new Materia('Bases de Datos I', '1023','1','4',false);
+             $materia_24=new Materia('Lba Bases de Datos I', '1024','3','4',false);
               //semestre 5
               $materia_25=new Materia('Analisis numerica', '1025','4','5',false);
               $materia_26=new Materia('Teoría de la Computación', '1026','1','5',false);
