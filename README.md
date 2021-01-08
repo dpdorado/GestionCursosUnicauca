@@ -5,3 +5,5 @@
  * La aplicación se desarrollo utilizando: html, css (Bootstrap), JavaScript y php
 
  * El funcionamiento de la app se puede observar desde el siguiente enlace -> link: https://gestioncursusunicauca.000webhostapp.com
+
+ * En este video se toma como ejemplo de explicación la app desarrollada: https://www.youtube.com/watch?v=TicJeNWo4uA&t=219s
